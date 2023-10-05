@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <forms method="post" action="fporm.aspx">
+      <p>
+         <label>Customer Name: <input type="text" id="customerName" name="customerName" maxlength="50">
+         </label>
+      </p>
+      <p><lable><span>Email ID:</span><input type="email" name="email id" required></lable></p>
+      <p><lable><span>Telephone:</span><input type="tel" name="telinput" required></lable></p>
+      <p><lable><spam>URL Input:</spam><input type="url" name="urlinput" required></lable></p>
+      <p><lable><spam>Number:</spam><input type="number" name="number input" required></lable></p>
+      <p><lable><span>Autofocus: </span><input type="text" autofocus></lable></p>
+      <p><lable><span>pattern: </span><input type="text" pattern="(\d{5}([\-]\d{4})?)"></lable>Use the valid/invalid zip code</p>
+      <p><lable><span>Placeholder: </span><input type="text" placeholder="Hello World"></lable></p>
+      <p><lable><span>Required: </span><input type="text" required></lable></p>
+      <p><lable><span>Step: </span><input type="number" step="5"></lable>The number must be devisible by 5</p>
+   <firldset>
+      <legend>Pizza Size</legend>
+      <p><label><input type="radio" name="Size" value="small">Small (10 inch)</label></p>
+      <p><label><input type="radio" name="Size" value="mediam">Mediam (15 inch)</label></p>
+      <p><label><input type="radio" name="Size" value="large">Large (20 inch)</label></p>
+   </firldset>  
+   <fieldset>
+      <legend>Pizza Toppings</legend>
+      <p><label><input type="checkbox" name="toppings" values="bacon">Bacon</label></p>
+      <p><label><input type="checkbox" name="toppings" values="black olives">Black olives</label></p>
+      <p><label><input type="checkbox" name="toppings" values="canadian bacon/ham">Canadian bacon/ham</label></p>
+      <p><label><input type="checkbox" name="toppings" values="onions">Onions</label></p>
+      <p><label><input type="checkbox" name="toppings" values="chicken">Chicken</label></p>
+      <p><label><input type="checkbox" name="toppings" values="green peppers">Green peppers</label></p>
+      <p><label><input type="checkbox" name="toppings" values="tomatoes">Tomatoes</label></p>
+   </fieldset> 
+   <p><lable><spam>Range Number:</spam><input type="range" name="rangeinput" required value="42"></lable>The value set to 42 by default it ranges from 0 to 100</p>
+   <p>Crust
+      <select name="Crust">
+         <option value="c1">Thin Crust</option>
+         <option value="c2">New York Crust</option>
+         <option value="c3">St. Louis Crust</option>
+         <option value="c4">Sicilian Crust</option>
+         <option value="c5"> Chicago-Style Deep Dish Crust</option>
+         <option value="c6">Pan Pizza Crust</option>
+      </select>
+   </p>
+   <p><label><span>Data List: </span><input type="text" list="someList"></label></p>
+   <datalist id="someList">
+      <option label="First" value="First"></option>
+      <option label="Second" value="Second"></option>
+      <option label="Third" value="Third"></option>
+   </datalist>
+      <p>
+         <label for="comments">Delivery Address:</label>
+         <textarea name="address" col="50" row="5" maxlength="5000">
+type here...
+         </textarea>
+      </p>
+   <button>Step 2</button>
+   </forms>
+</body>
+</html>
